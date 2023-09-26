@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Welcome to ToyQuest!</title>
+        <link rel="stylesheet" href="login.css">
+        <link rel="icon" href="teddyicon.png">
+    </head>
+    <body>
+
+        
+        <div class="loginform">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle" onclick="login()">Log in</button>
+                    <button type="button" class="toggle" onclick="register()">Register</button>
+                </div>
+                <div class="social-icons">
+                    <img src="fb.png">
+                    <img src="tw.png">
+                    <img src="gp.png">
+                </div>
+                    <form id="login"  class="input-group">
+                        <input type="text" class="inputfield" name = "UserId" placeholder="User ID" required >
+                        <input type="password" class="inputfield" name="Password" placeholder="Enter Password" required>
+                        <input type="checkbox" class="checkboxx"><span> Remember password</span>
+                        <button type="submit" class="submitbtn" name="submit"> Log in</button>
+                    </form>
+                    <form id="register" class="input-group">
+                        <input type="text" class="inputfield" name="UserId"placeholder="User ID" required>
+                        <input type="email" class="inputfield" name="email" placeholder="Email ID" required>
+                        <input type="text" class="inputfield" name="password" placeholder="Enter Password" required>
+                        <input type="checkbox" class="checkboxx"><span> I agree to the terms & conditions</span>
+                        <button type="submit" class="submitbtn" name="submit"> Register</button>
+                    </form>
+            </div>
+        </div>
+        <script>
+                  var x = document.getElementById("login");
+                  var y = document.getElementById("register");
+                  var z = document.getElementById("btn");
+
+                  function register(){
+                    x.style.left="-400px";
+                    y.style.left="50px";
+                    z.style.left="110px";
+                  }
+                  function login(){
+                    x.style.left="50px";
+                    y.style.left="450px";
+                    z.style.left="0px";
+                  }
+        </script>
+  
+    </body>
+</html>
